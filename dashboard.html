@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard | Children's Care School</title>
+<meta name="description" content="School overview for teachers and administrators.">
+<script>(function(){try{var t=localStorage.getItem("ccs:theme");if(!t)t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.dataset.theme=t}catch(e){if(matchMedia("(prefers-color-scheme: dark)").matches)document.documentElement.dataset.theme="dark"}})();</script>
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/variables.css"><link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css"><link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="site-header"></div>
+<main id="main">
+<section class="page-title"><div class="container"><h1>Dashboard</h1><p class="muted">A quick view of the school today.</p></div></section>
+<section class="section"><div class="container">
+  <div class="grid grid--3"><article class="card"><p class="muted" style="margin:0">Total students</p><div class="kpi__num" id="k-students">0</div></article><article class="card"><p class="muted" style="margin:0">Latest attendance</p><div class="kpi__num" id="k-today">0</div></article><article class="card"><p class="muted" style="margin:0">Active courses</p><div class="kpi__num" id="k-courses">0</div></article><article class="card"><p class="muted" style="margin:0">Course enrolments</p><div class="kpi__num" id="k-enrol">0</div></article></div>
+  <article class="card" style="margin-top:1.4rem"><h2>Attendance trend</h2><p class="muted">School-wide attendance over the last 14 school days.</p><svg class="chart" id="chart" viewBox="0 0 640 280" role="img" aria-label="Line chart of daily school attendance percentage"></svg></article>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<script src="assets/js/data.js"></script><script src="assets/js/main.js"></script><script src="assets/js/theme.js"></script><script src="assets/js/nav.js"></script><script src="assets/js/dashboard.js"></script>
+</body>
+</html>

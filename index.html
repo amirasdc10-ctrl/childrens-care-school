@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home | Children's Care School</title>
+<meta name="description" content="A premium, caring school for curious young minds.">
+<script>(function(){try{var t=localStorage.getItem("ccs:theme");if(!t)t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.dataset.theme=t}catch(e){if(matchMedia("(prefers-color-scheme: dark)").matches)document.documentElement.dataset.theme="dark"}})();</script>
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/variables.css"><link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css"><link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="site-header"></div>
+<main id="main">
+<section class="hero"><div class="container hero__inner">
+  <div><h1>Where every child is known, nurtured and inspired</h1><span class="divider"></span>
+  <p class="muted" style="font-size:1.15rem">Small classes, devoted teachers and a campus built for curiosity, from Grade 6 to Grade 8.</p>
+  <div class="hero__cta"><a class="btn btn--primary" href="contact.html">Apply now</a><a class="btn btn--outline" href="courses.html">Explore courses</a></div></div>
+  <div class="hero__art" aria-hidden="true"><svg viewBox="0 0 200 220" width="70%"><circle cx="100" cy="70" r="38" fill="#E8D5A8" stroke="#B8893B" stroke-width="2"/><path d="M30 190c0-40 30-62 70-62s70 22 70 62z" fill="#14284B"/><path d="M100 128v62" stroke="#B8893B" stroke-width="2"/><path d="M62 150c14-8 28-8 38 0 10-8 24-8 38 0v26c-14-8-28-8-38 0-10-8-24-8-38 0z" fill="#FFFBF3"/></svg></div>
+</div></section>
+<section class="section"><div class="container grid grid--2" style="align-items:center">
+  <div class="reveal"><h2>A small school with a big heart</h2><span class="divider"></span><p>Since 1998 we have taught the whole child: strong academics, creative expression and everyday kindness. Every student has a teacher who knows their name, their strengths and what makes them laugh.</p><a class="btn btn--outline" href="about.html">Our story</a></div>
+  <div class="stats reveal"><div><div class="stat__num" data-count="25" data-suffix="+">0</div><div class="stat__label">Years of care</div></div><div><div class="stat__num" data-count="600" data-suffix="+">0</div><div class="stat__label">Students</div></div><div><div class="stat__num" data-count="45">0</div><div class="stat__label">Teachers</div></div><div><div class="stat__num" data-count="98" data-suffix="%">0</div><div class="stat__label">Parent satisfaction</div></div></div>
+</div></section>
+<section class="section section--alt"><div class="container"><div class="section__head"><h2>Featured courses</h2><span class="divider"></span></div><div class="grid grid--3" data-featured></div><p style="margin-top:1.5rem"><a class="btn btn--primary" href="courses.html">See all courses</a></p></div></section>
+<section class="section"><div class="container"><div class="section__head"><h2>Our facilities</h2><span class="divider"></span></div><div class="grid grid--3" data-render="facilities"></div></div></section>
+<section class="section section--alt"><div class="container"><div class="section__head"><h2>What families say</h2><span class="divider"></span></div><div class="grid grid--3" data-render="testimonials"></div></div></section>
+<section class="section"><div class="container"><div class="section__head"><h2>Upcoming events</h2><span class="divider"></span></div><div class="grid grid--3" data-render="events"></div></div></section>
+</main>
+<div id="site-footer"></div>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<script src="assets/js/data.js"></script><script src="assets/js/main.js"></script><script src="assets/js/theme.js"></script><script src="assets/js/nav.js"></script><script src="assets/js/courses.js"></script>
+</body>
+</html>

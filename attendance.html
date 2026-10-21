@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Attendance | Children's Care School</title>
+<meta name="description" content="Mark and review class attendance.">
+<script>(function(){try{var t=localStorage.getItem("ccs:theme");if(!t)t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.dataset.theme=t}catch(e){if(matchMedia("(prefers-color-scheme: dark)").matches)document.documentElement.dataset.theme="dark"}})();</script>
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/variables.css"><link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css"><link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="site-header"></div>
+<main id="main">
+<section class="page-title"><div class="container"><h1>Attendance</h1><p class="muted">Mark today’s register and review the month.</p></div></section>
+<section class="section"><div class="container">
+  <div class="toolbar"><div class="field"><label for="class">Class</label><select id="class"></select></div><div class="field"><label for="date">Date</label><input id="date" type="date"></div><button class="btn btn--outline" id="mark-all" type="button">Mark all present</button></div>
+  <div class="counts" aria-live="polite" style="margin-bottom:1rem"><span class="badge">Present <strong id="n-present">0</strong></span><span class="badge">Late <strong id="n-late">0</strong></span><span class="badge">Absent <strong id="n-absent">0</strong></span></div>
+  <div class="roster" id="roster"></div><button class="btn btn--primary" id="submit" type="button">Save attendance</button>
+  <h2 style="margin-top:3rem">Monthly summary</h2><p class="muted">Late counts as attended.</p>
+  <div class="table-wrap"><table><thead><tr><th>Student</th><th>Attendance</th><th>Progress</th></tr></thead><tbody id="summary-rows"></tbody></table></div>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<script src="assets/js/data.js"></script><script src="assets/js/main.js"></script><script src="assets/js/theme.js"></script><script src="assets/js/nav.js"></script><script src="assets/js/attendance.js"></script>
+</body>
+</html>

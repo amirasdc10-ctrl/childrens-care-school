@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enrol | Children's Care School</title>
+<meta name="description" content="Choose a student and select courses.">
+<script>(function(){try{var t=localStorage.getItem("ccs:theme");if(!t)t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.dataset.theme=t}catch(e){if(matchMedia("(prefers-color-scheme: dark)").matches)document.documentElement.dataset.theme="dark"}})();</script>
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/variables.css"><link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css"><link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="site-header"></div>
+<main id="main">
+<section class="page-title"><div class="container"><h1>Course enrolment</h1><p class="muted">Choose a student, then tick the courses to enrol them in.</p></div></section>
+<section class="section"><div class="container">
+  <div class="field" style="max-width:360px;margin-bottom:1.4rem"><label for="student">Student</label><select id="student"></select></div>
+  <div class="layout-2"><div class="grid" id="course-list"></div>
+  <aside class="card summary" aria-live="polite"><h3>Your selection</h3><div id="summary"></div><p>Total credits: <strong id="credits">0</strong></p><p>Total fees: <span class="summary__total" id="fees">₹0</span></p><button class="btn btn--primary" id="confirm" type="button" disabled>Confirm enrolment</button></aside></div>
+  <h2 style="margin-top:3rem">Who is enrolled where</h2><div class="table-wrap"><table><thead><tr><th>Student</th><th>Courses</th></tr></thead><tbody id="enrol-rows"></tbody></table></div>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<script src="assets/js/data.js"></script><script src="assets/js/main.js"></script><script src="assets/js/theme.js"></script><script src="assets/js/nav.js"></script><script src="assets/js/enrollment.js"></script>
+</body>
+</html>

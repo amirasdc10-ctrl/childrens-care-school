@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login | Children's Care School</title>
+<meta name="description" content="Sign in to Children's Care School.">
+<script>(function(){try{var t=localStorage.getItem("ccs:theme");if(!t)t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.dataset.theme=t}catch(e){if(matchMedia("(prefers-color-scheme: dark)").matches)document.documentElement.dataset.theme="dark"}})();</script>
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/variables.css"><link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css"><link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="site-header"></div>
+<main id="main">
+<section class="section"><div class="container"><div class="card auth">
+  <h1 style="font-size:2rem">Welcome back</h1><p class="muted">Demo form only: nothing is sent anywhere.</p>
+  <form class="form" data-validate="login" novalidate>
+    <fieldset class="roles"><legend class="sr-only">Role</legend>
+    <label><input type="radio" name="role" value="Student" checked>Student</label><label><input type="radio" name="role" value="Teacher">Teacher</label><label><input type="radio" name="role" value="Admin">Admin</label><label><input type="radio" name="role" value="Parent">Parent</label></fieldset>
+    <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required autocomplete="email"><span class="field__error" role="alert"></span></div>
+    <div class="field"><label for="password">Password</label><input id="password" name="password" type="password" required minlength="6" autocomplete="current-password"><span class="field__error" role="alert"></span></div>
+    <button class="btn btn--primary" type="submit">Sign in</button>
+  </form></div></div></section>
+</main>
+<div id="site-footer"></div>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<script src="assets/js/data.js"></script><script src="assets/js/main.js"></script><script src="assets/js/theme.js"></script><script src="assets/js/nav.js"></script>
+</body>
+</html>

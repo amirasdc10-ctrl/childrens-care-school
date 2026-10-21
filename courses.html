@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Courses | Children's Care School</title>
+<meta name="description" content="Browse and search the Children's Care School course catalogue.">
+<script>(function(){try{var t=localStorage.getItem("ccs:theme");if(!t)t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.dataset.theme=t}catch(e){if(matchMedia("(prefers-color-scheme: dark)").matches)document.documentElement.dataset.theme="dark"}})();</script>
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/variables.css"><link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css"><link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="site-header"></div>
+<main id="main">
+<section class="page-title"><div class="container"><h1>Course catalogue</h1><p class="muted">Search by name, or filter by grade and subject.</p></div></section>
+<section class="section"><div class="container">
+  <div class="toolbar"><div class="field"><label for="q">Search courses</label><input id="q" type="search" placeholder="e.g. robotics"></div>
+  <div class="field"><label for="grade">Grade</label><select id="grade"><option value="">All grades</option></select></div>
+  <div class="field"><label for="subject">Subject</label><select id="subject"><option value="">All subjects</option></select></div></div>
+  <p class="muted" id="count" aria-live="polite"></p><div class="grid grid--3" data-catalogue></div>
+</div></section>
+<dialog id="course-dialog" aria-labelledby="dlg-title"><div id="dlg-body"></div><p style="margin-top:1.2rem"><button class="btn btn--primary btn--sm" type="button" data-close>Close</button> <a class="btn btn--outline btn--sm" href="enrollment.html">Enrol</a></p></dialog>
+</main>
+<div id="site-footer"></div>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<script src="assets/js/data.js"></script><script src="assets/js/main.js"></script><script src="assets/js/theme.js"></script><script src="assets/js/nav.js"></script><script src="assets/js/courses.js"></script>
+</body>
+</html>

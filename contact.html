@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Children's Care School</title>
+<meta name="description" content="Admissions enquiries and school address.">
+<script>(function(){try{var t=localStorage.getItem("ccs:theme");if(!t)t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.dataset.theme=t}catch(e){if(matchMedia("(prefers-color-scheme: dark)").matches)document.documentElement.dataset.theme="dark"}})();</script>
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/variables.css"><link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css"><link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="site-header"></div>
+<main id="main">
+<section class="page-title"><div class="container"><h1>Admissions enquiry</h1><p class="muted">Tell us about your child and we will be in touch.</p></div></section>
+<section class="section"><div class="container grid grid--2">
+  <form class="form card" data-validate="contact" novalidate>
+    <div class="field"><label for="name">Parent or guardian name</label><input id="name" name="name" required minlength="2" autocomplete="name"><span class="field__error" role="alert"></span></div>
+    <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required autocomplete="email"><span class="field__error" role="alert"></span></div>
+    <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" required pattern="[0-9+ ]{10,15}" data-msg="Enter 10 to 15 digits, for example 98765 43210." autocomplete="tel"><span class="field__error" role="alert"></span></div>
+    <div class="field"><label for="grade">Grade applying for</label><select id="grade" name="grade" required><option value="">Choose a grade</option><option>Grade 6</option><option>Grade 7</option><option>Grade 8</option></select><span class="field__error" role="alert"></span></div>
+    <div class="field"><label for="message">Your message</label><textarea id="message" name="message" rows="4" required minlength="10"></textarea><span class="field__error" role="alert"></span></div>
+    <button class="btn btn--primary" type="submit">Send enquiry</button>
+  </form>
+  <div><div class="card" style="margin-bottom:1.4rem"><h2>Visit us</h2><p><span data-config="address"></span><br><span data-config="hours"></span><br><span data-config="phone"></span><br><span data-config="email"></span></p></div><div class="map" role="img" aria-label="Map placeholder"><p>Map placeholder<br><small>Embed your map here</small></p></div></div>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<script src="assets/js/data.js"></script><script src="assets/js/main.js"></script><script src="assets/js/theme.js"></script><script src="assets/js/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+/* Design tokens. Light is default; dark is applied via [data-theme="dark"] on <html>. */
+:root{
+  --bg:#F6F1E7; --surface:#FFFBF3; --surface-alt:#EDE5D4;
+  --text:#1B2433; --text-muted:#4A5568;
+  --primary:#14284B; --on-primary:#FFFBF3;
+  --accent:#B8893B; --accent-soft:#E8D5A8; --on-accent:#1B2433;
+  --border:rgba(184,137,59,.38); --shadow:0 10px 28px rgba(20,40,75,.10);
+  --danger:#9B1C1C; --ok:#2F6B3F;
+  --font-head:'Playfair Display','Cormorant Garamond',Georgia,'Times New Roman',serif;
+  --font-body:'Inter','Poppins',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --radius:14px; --maxw:1140px; --ease:cubic-bezier(.2,.7,.2,1);
+}
+[data-theme="dark"]{
+  --bg:#0F1A2E; --surface:#16243D; --surface-alt:#1B2C4A;
+  --text:#F3EBDD; --text-muted:#CFC8B8;
+  --primary:#E8D5A8; --on-primary:#0F1A2E;
+  --accent:#D4A851; --accent-soft:#5A4824; --on-accent:#0F1A2E;
+  --border:rgba(212,168,81,.4); --shadow:0 10px 28px rgba(0,0,0,.4);
+  --danger:#FF9B9B; --ok:#8FD19E;
+}
